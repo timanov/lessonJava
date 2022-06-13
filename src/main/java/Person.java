@@ -16,4 +16,12 @@ public class Person {
         return 10 * name.hashCode() + 20456;
     }
 
+    @Override
+    public boolean equals(Object obj){
+        if(!(obj instanceof Person)) return false;
+
+        Person p = (Person)obj;
+        return this.name.equals(p.name);
+    }
+
 }
