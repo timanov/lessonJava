@@ -28,12 +28,30 @@ public class Program {
             int[] numbers = new int[3];
             numbers[4] = 45;
             System.out.println(numbers[4]);
-        } catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
             System.out.println("Выброшена ошибка");
         }
 
         Day current = Day.MONDAY;
         System.out.println(current);
+
+        Book1 b1 = new Book1("War and Peace", "L.Tolstoy", Type.BELLETRE);
+        System.out.printf("Book '%s' has a type %s ", b1.name, b1.author, b1.bookType);
+
+        switch (b1.bookType){
+            case BELLETRE:
+                System.out.println("Belletre");
+                break;
+            case SCIENCE:
+                System.out.println("Science");
+                break;
+            case SCIENCE_FICTION:
+                System.out.println("Science fiction");
+                break;
+            case PHANTASY:
+                System.out.println("Phantasy");
+                break;
+        }
     }
 }
