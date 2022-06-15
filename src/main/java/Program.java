@@ -32,5 +32,8 @@ public class Program {
             ex.printStackTrace();
             System.out.println("Выброшена ошибка");
         }
+
+        Day current = Day.MONDAY;
+        System.out.println(current);
     }
 }
