@@ -53,5 +53,13 @@ public class Program {
                 System.out.println("Phantasy");
                 break;
         }
+
+        Type[] types = Type.values();
+        for (Type s : types) {
+            System.out.println(s);
+        }
+
+        System.out.println(Color.RED.getCode()); //#FF0000
+        System.out.println(Color.GREEN.getCode()); //#00FF00
     }
 }
